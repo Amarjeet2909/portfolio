@@ -1,4 +1,7 @@
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import "../src/index.css";
+import { useState, useEffect } from "react";
+import PacmanLoader from "react-spinners/PacmanLoader";
 
 import {
   About,
@@ -14,7 +17,22 @@ import {
 import Achievement from "./components/Achievement.jsx";
 
 function App() {
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000)
+  },[])
+
   return (
+    <div className="App">
+    {
+          loading ? (
+            <div className="loader-container">
+            <PacmanLoader color={'#915EFF'} loading={loading} size={50} />
+            </div>
+           ) : (
     <Router>
       <div className="relative z-0 bg-primary">
         <Routes>
@@ -37,6 +55,8 @@ function App() {
         </Routes>
       </div>
     </Router>
+    )}
+    </div>
   );
 }
 

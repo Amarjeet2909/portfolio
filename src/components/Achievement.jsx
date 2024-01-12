@@ -20,6 +20,10 @@ import i14 from "../assets/Certificate/i14.jpg";
 import i15 from "../assets/Certificate/i15.png";
 import i16 from "../assets/Certificate/i16.jpg";
 import i17 from "../assets/Certificate/i17.png";
+import leetcode from "../assets/leetcode.png";
+import linkedin from "../assets/linkedin.png";
+import github from "../assets/github.png";
+import gmail from "../assets/gmail.png";
 
 const Achievement = () => {
 
@@ -48,9 +52,31 @@ const Achievement = () => {
     { id: 4, imageSrc: i12},
   ];
 
+  const profile = [
+    { id: 1, imageSrc: leetcode, link: "https://leetcode.com/amarjeet2909/"},
+    { id: 2, imageSrc: github, link: "https://github.com/Amarjeet2909"},
+    { id: 3, imageSrc: linkedin, link: "https://www.linkedin.com/in/amarjeet-cse/"},
+  ]
+
   return (
     <>
     <Navbar />
+
+<div className="achievement-section">
+
+<AnimatedSection
+ sectionId="certifications-section"
+ heading="Profiles"
+ />
+ 
+<div className="certifications5">
+ {profile.map((profile) => (
+   <div className="certificate-box5" key={profile.id}>
+     <a href={profile.link} target="_blank"><img src={profile.imageSrc} alt={`Certificate ${profile.id}`} className="certificate-image5" /></a>
+   </div>
+ ))}
+</div>
+</div>
 
     <div className="achievement-section">
 

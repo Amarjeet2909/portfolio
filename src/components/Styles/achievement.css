@@ -34,6 +34,38 @@
     box-shadow: 0 0 30px yellow; /* Add shadow effect */
   }
 
+  /* ********************************************* */
+  .certifications5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1px;
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+  
+  /* Individual certificate box */
+  .certificate-box5 {
+    width: calc(33.33% - 1px); /* Set width for 3 boxes in a row, considering gap */
+    margin-top: 20px;
+    margin-bottom: 0px; /* Adjust margin between rows */
+    /* Add other styles for each certificate box as needed */
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  /* Certificate image */
+  .certificate-image5 {
+    width: 25%; /* Adjust image width */
+    height: 80%; /* Maintain aspect ratio */
+    overflow: hidden; 
+    transition: transform 0.3s ease; /* Adding a transition for a smooth animation */
+  }
+
+  .certificate-image5:hover {
+    transform: scale(1.1); /* Increasing the scale on hover */
+  }
+
+  /* ********************************************* */
   .certificate-image2 {
     width: 100%; /* Adjust image width */
     height: 100%; /* Maintain aspect ratio */

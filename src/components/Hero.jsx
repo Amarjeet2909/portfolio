@@ -62,7 +62,7 @@ const Hero = () => {
             >
             <button className="resume-button">Download Resume</button>
       </a>
-        <a href="#about">
+        <a href="/portfolio/#Gallery">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
               animate={{
