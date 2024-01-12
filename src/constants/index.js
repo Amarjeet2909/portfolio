@@ -1,6 +1,5 @@
 import { l } from "maath/dist/misc-7d870b3c.esm";
 import {
-  mobile,
   backend,
   creator,
   javascript,
@@ -9,20 +8,11 @@ import {
   css,
   reactjs,
   redux,
-  tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
   jobit,
   tripguide,
-  threejs,
 } from "../assets";
 import frontend from "../assets/frontend.png";
 import cplusplus from "../assets/tech/cplusplus.png";
@@ -39,7 +29,7 @@ import web from "../assets/web.png";
 
 export const navLinks = [
   {
-    id: "/",
+    id: "/portfolio",
     title: "Home",
   },
   {
@@ -144,7 +134,7 @@ const experiences = [
     points: [
       "written technical articles on various aspects of computer science.",
       "15+ Articles published till date related to DSA, C++, Linux, Git, Shell & Web Development domain.",
-      "Published articles are available at geeksforgeeks.org/user/jeetamar__singh/articles",
+      "Published articles are available at https://shorturl.at/gjX28",
     ],
   },
   {
@@ -152,11 +142,11 @@ const experiences = [
     company_name: "Placement Cell CITK",
     icon: tnp,
     iconBg: "#E6DEDD",
-    date: "June 2021 - Present",
+    date: "June 2023 - Present",
     points: [
       "Serving as a T&P Co-ordinator for the Placement cell of my College.",
-      "Co-ordinating and managing the placement opportunities for the CSE Students.",
-      "Acting as a bridge between organization and college.",
+      "Co-ordinating and managing the placement opportunities for the 200+ CSE students & 500+ non-cse student's",
+      "Acting as a bridge between organizations and college.",
     ],
   },
   {
@@ -178,35 +168,8 @@ const experiences = [
     points: [
       "I have served as a Secretary of the Coding Club CITK which is the coding society of CIT Kokrajhar.",
       "Taught C/C++ Programming and organized 10+ Events/Workshops related to Coding.",
-      "Responsible for managing the entire team of the club.",
+      "Responsible for managing the entire team of the club cosisting of 250+ members.",
     ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
@@ -289,4 +252,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
