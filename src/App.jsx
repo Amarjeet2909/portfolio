@@ -30,7 +30,7 @@ function App() {
               <StarsCanvas />
             </div>
           </>} />
-          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/Gallery" element={<Gallery />} />
           <Route path="/Experience" element={<Experience />} />
           <Route path="/Projects" element={<Works />} />
           <Route path="/Achievement" element={<Achievement />} />
