@@ -62,21 +62,21 @@ const Achievement = () => {
     <>
     <Navbar />
 
-<div className="achievement-section">
+    <div className="achievement-section">
 
-<AnimatedSection
- sectionId="certifications-section"
- heading="Profiles"
- />
+    <AnimatedSection
+      sectionId="certifications-section"
+      heading="Profiles"
+    />
  
-<div className="certifications5">
- {profile.map((profile) => (
-   <div className="certificate-box5" key={profile.id}>
+    <div className="certifications5">
+      {profile.map((profile) => (
+    <div className="certificate-box5" key={profile.id}>
      <a href={profile.link} target="_blank"><img src={profile.imageSrc} alt={`Certificate ${profile.id}`} className="certificate-image5" /></a>
-   </div>
- ))}
-</div>
-</div>
+    </div>
+    ))}
+    </div>
+    </div>
 
     <div className="achievement-section">
 

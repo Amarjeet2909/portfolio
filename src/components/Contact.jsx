@@ -8,10 +8,6 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import "./Styles/contact.css";
 
-import leetcode from "../assets/leetcode.png";
-import github from "../assets/github.png";
-import linkedin from "../assets/linkedin.png";
-import gmail from "../assets/gmail.png";
 
 const Contact = () => {
   const formRef = useRef();
