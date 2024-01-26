@@ -29,23 +29,23 @@ import web from "../assets/web.png";
 
 export const navLinks = [
   {
-    id: "/portfolio",
+    id: "/",
     title: "Home",
   },
   {
-    id: "/portfolio/#Projects",
+    id: "/#Projects",
     title: "Projects",
   },
   {
-    id: "/portfolio/#Experience",
+    id: "/#Experience",
     title: "Experience",
   },
   {
-    id: "/portfolio/#Achievement",
+    id: "/#Achievement",
     title: "Achievement",
   },
   {
-    id: "/portfolio/#Gallery",
+    id: "/#Gallery",
     title: "Gallery",
   },
 ];
