@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "add-domain": "echo \"amarjeet.online\" > dist/CNAME",
+    "deploy": "npm run add-domain && gh-pages -d dist",
     "build": "vite build",
     "preview": "vite preview"
   },
